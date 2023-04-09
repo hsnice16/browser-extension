@@ -9,7 +9,7 @@ describe("E2E Extension", () => {
     ({ page } = await setUpBrowser());
   });
 
-  it("must change paragraph text on the app page to Life is shitt. The extension did this.", async () => {
+  it("must see the You're staring at my extension text", async () => {
     const h1Ele = await page.$("[data-testing-id=h1-ele]");
     const h1EleText = await page.evaluate(
       (element) => element.innerText.trim(),
